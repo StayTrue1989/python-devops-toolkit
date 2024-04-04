@@ -7,14 +7,13 @@ def get_variable(
     """
     Fetch the value of an environment variable.
 
-    This function retrieves the value of an environment variable, with options to
+    This function retrieves the value of an environment variable. Options to
     specify if it is required and to provide a default value if it is not set or only
     contains whitespace.
-
     Args:
         name: Environment variable name.
         required: If True, raises KeyError for unset or whitespace-only values.
-        default: Default value if variable is unset or only whitespace.
+        default: The default value to return if the environment variable is not set or contains only whitespace. Defaults to None.
 
     Returns:
         Variable's value, or default if provided, otherwise None.
